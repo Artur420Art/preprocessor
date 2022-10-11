@@ -14,6 +14,10 @@ void Pre::make() {
 Pre::Pre() {
     this->make();
 }
+Pre::~Pre() {
+        inst.clear();
+        defines.clear();
+}
 void Pre::pre_process(const std::string& rhs) {
     fin.open(rhs);
     std::string str = "preproc.txt";
