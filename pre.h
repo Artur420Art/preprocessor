@@ -6,6 +6,7 @@
 class Pre {
 public:
     Pre();
+    ~Pre();
     void pre_process(const std::string&);
 private:
     typedef void(Pre::*func)(const std::string&);
